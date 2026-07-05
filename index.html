@@ -376,6 +376,12 @@ section{padding:clamp(4.5rem,9vw,8.5rem) clamp(20px,7vw,110px)}
   text-transform:uppercase;font-size:1.15rem;margin-bottom:.6rem;
 }
 .svc-grid p{color:var(--gray);font-size:.92rem}
+.svc-go{
+  display:inline-block;margin-top:1.1rem;font-family:var(--mono);font-size:.66rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;
+  border-bottom:2px solid var(--yellow);padding-bottom:.2rem;transition:color .18s;
+}
+.svc-go:hover{color:var(--coal)}
 @media(max-width:920px){.svc-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.svc-grid{grid-template-columns:1fr}}
 
@@ -726,7 +732,7 @@ footer a:hover{color:var(--coal)}
       </div>
       <div class="price">
         <b>800 Kč</b>
-        <a class="btn btn-signal" href="https://rezervace.infuznik.cz/rezervace">Rezervovat vyšetření</a>
+        <a class="btn btn-signal" href="https://rezervace.infuznik.cz/rezervace?unit=5&amp;service=1">Rezervovat vyšetření</a>
       </div>
     </div>
   </div>
@@ -745,25 +751,25 @@ footer a:hover{color:var(--coal)}
 
     <div class="mgroup rv">
       <div class="mgroup-title"><span class="eyebrow">01 · Výkon</span></div>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=12">
         <span class="nm">Manažer FIT<span class="ds">Maximální výkon pod tlakem — pro dlouhé dny, kdy hlava musí jet naplno.</span></span>
         <span class="tg">výkon · koncentrace · stres</span>
         <span class="pr">2 500 <small>Kč</small></span>
         <span class="go">Rezervovat →</span>
       </a>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=4">
         <span class="nm">Mind Boost<span class="ds">Podpora soustředění a mentální výdrže. Ostrá hlava bez litrů kávy.</span></span>
         <span class="tg">koncentrace · výkon · stres</span>
         <span class="pr">1 800 <small>Kč</small></span>
         <span class="go">Rezervovat →</span>
       </a>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=10">
         <span class="nm">Myersův koktejl<span class="ds">Klasika infuzní terapie — vitaminy a minerály pro energii a celkovou rovnováhu.</span></span>
         <span class="tg">energie · rovnováha · stres</span>
         <span class="pr">2 200 <small>Kč</small></span>
         <span class="go">Rezervovat →</span>
       </a>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=2">
         <span class="nm">Regenerace &amp; Vitalita<span class="ds">Po tvrdém tréninku nebo dlouhodobém přetížení. Matějova volba po zápase.</span></span>
         <span class="tg">únava · sport · přetížení</span>
         <span class="pr">2 100 <small>Kč</small></span>
@@ -773,25 +779,25 @@ footer a:hover{color:var(--coal)}
 
     <div class="mgroup rv">
       <div class="mgroup-title"><span class="eyebrow">02 · Obnova</span></div>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=5">
         <span class="nm">After Party / Restart<span class="ds">Rychlá vzpruha po večírku nebo probdělé noci. Tekutiny, minerály, energie.</span></span>
         <span class="tg">kocovina · hydratace · energie</span>
         <span class="pr">1 700 <small>Kč</small></span>
         <span class="go">Rezervovat →</span>
       </a>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=6">
         <span class="nm">Analgetická infuze<span class="ds">Úleva od bolesti zad, šíje a svalů — pro akutní i chronické obtíže.</span></span>
         <span class="tg">záda · bolest · napětí</span>
         <span class="pr">1 600 <small>Kč</small></span>
         <span class="go">Rezervovat →</span>
       </a>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=7">
         <span class="nm">Detox<span class="ds">Silná kombinace antioxidantů včetně glutathionu. Ideální po nemoci nebo ve stresovém období.</span></span>
         <span class="tg">antioxidanty · očista</span>
         <span class="pr">2 150 <small>Kč</small></span>
         <span class="go">Rezervovat →</span>
       </a>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=9">
         <span class="nm">Post-COVID infuze<span class="ds">Návrat sil po prodělané nemoci — proti únavě a pro obnovu imunity.</span></span>
         <span class="tg">rekonvalescence · únava</span>
         <span class="pr">2 700 <small>Kč</small></span>
@@ -801,25 +807,25 @@ footer a:hover{color:var(--coal)}
 
     <div class="mgroup rv">
       <div class="mgroup-title"><span class="eyebrow">03 · Obrana &amp; vzhled</span></div>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=1">
         <span class="nm">Podpora imunity<span class="ds">Pro období častých nachlazení a oslabení. Prevence, která je vidět na docházce.</span></span>
         <span class="tg">imunita · prevence</span>
         <span class="pr">2 490 <small>Kč</small></span>
         <span class="go">Rezervovat →</span>
       </a>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=8">
         <span class="nm">Multivitamin<span class="ds">Kompletní vitaminový komplex pro imunitu, metabolismus a nervový systém.</span></span>
         <span class="tg">únava · imunita · prevence</span>
         <span class="pr">1 900 <small>Kč</small></span>
         <span class="go">Rezervovat →</span>
       </a>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=11">
         <span class="nm">Antioxidační booster<span class="ds">Ochrana buněk před oxidačním stresem, podpora vitality.</span></span>
         <span class="tg">imunita · buňky · vitalita</span>
         <span class="pr">1 900 <small>Kč</small></span>
         <span class="go">Rezervovat →</span>
       </a>
-      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace">
+      <a class="mrow" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=3">
         <span class="nm">Beauty &amp; Anti-Aging<span class="ds">Výživa pro pleť, vlasy a nehty zevnitř — tam, kde krémy nedosáhnou.</span></span>
         <span class="tg">pleť · vlasy · nehty</span>
         <span class="pr">2 100 <small>Kč</small></span>
@@ -845,28 +851,28 @@ footer a:hover{color:var(--coal)}
       <button class="chip" data-g="hlava">🧠 Mentální výkon / restart</button>
     </div>
     <div class="guide-out" id="g-imunita">
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Podpora imunity</span><span class="gp">2 490 Kč</span><span class="ga">Rezervovat →</span></a>
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Multivitamin</span><span class="gp">1 900 Kč</span><span class="ga">Rezervovat →</span></a>
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Antioxidační booster</span><span class="gp">1 900 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=1"><span class="gn">Podpora imunity</span><span class="gp">2 490 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=8"><span class="gn">Multivitamin</span><span class="gp">1 900 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=11"><span class="gn">Antioxidační booster</span><span class="gp">1 900 Kč</span><span class="ga">Rezervovat →</span></a>
     </div>
     <div class="guide-out" id="g-energie">
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Regenerace &amp; Vitalita</span><span class="gp">2 100 Kč</span><span class="ga">Rezervovat →</span></a>
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Myersův koktejl</span><span class="gp">2 200 Kč</span><span class="ga">Rezervovat →</span></a>
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Multivitamin</span><span class="gp">1 900 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=2"><span class="gn">Regenerace &amp; Vitalita</span><span class="gp">2 100 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=10"><span class="gn">Myersův koktejl</span><span class="gp">2 200 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=8"><span class="gn">Multivitamin</span><span class="gp">1 900 Kč</span><span class="ga">Rezervovat →</span></a>
     </div>
     <div class="guide-out" id="g-bolest">
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Analgetická infuze</span><span class="gp">1 600 Kč</span><span class="ga">Rezervovat →</span></a>
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Post-COVID infuze</span><span class="gp">2 700 Kč</span><span class="ga">Rezervovat →</span></a>
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Detox</span><span class="gp">2 150 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=6"><span class="gn">Analgetická infuze</span><span class="gp">1 600 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=9"><span class="gn">Post-COVID infuze</span><span class="gp">2 700 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=7"><span class="gn">Detox</span><span class="gp">2 150 Kč</span><span class="ga">Rezervovat →</span></a>
     </div>
     <div class="guide-out" id="g-vzhled">
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Beauty &amp; Anti-Aging</span><span class="gp">2 100 Kč</span><span class="ga">Rezervovat →</span></a>
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Detox</span><span class="gp">2 150 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=3"><span class="gn">Beauty &amp; Anti-Aging</span><span class="gp">2 100 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=7"><span class="gn">Detox</span><span class="gp">2 150 Kč</span><span class="ga">Rezervovat →</span></a>
     </div>
     <div class="guide-out" id="g-hlava">
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Mind Boost</span><span class="gp">1 800 Kč</span><span class="ga">Rezervovat →</span></a>
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">Manažer FIT</span><span class="gp">2 500 Kč</span><span class="ga">Rezervovat →</span></a>
-      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace"><span class="gn">After Party / Restart</span><span class="gp">1 700 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=4"><span class="gn">Mind Boost</span><span class="gp">1 800 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=12"><span class="gn">Manažer FIT</span><span class="gp">2 500 Kč</span><span class="ga">Rezervovat →</span></a>
+      <a class="gcard" href="https://rezervace.infuznik.cz/rezervace?unit=1&amp;service=5"><span class="gn">After Party / Restart</span><span class="gp">1 700 Kč</span><span class="ga">Rezervovat →</span></a>
     </div>
     <p class="rv" style="font-family:var(--mono);font-size:.72rem;color:var(--gray);margin-top:1.4rem">Nevíš si rady ani teď? Zavolej nám na <a href="tel:+420736731419" style="color:var(--gold)">+420 736 731 419</a> — poradíme.</p>
   </div>
@@ -883,24 +889,28 @@ footer a:hover{color:var(--coal)}
         <span class="sn">Injekce</span>
         <h3>Vitaminové včeličky</h3>
         <p>Nitrosvalové vitaminové injekce — rychlá dávka, když nemáš čas na celou infuzi.</p>
+        <a class="svc-go" href="https://rezervace.infuznik.cz/rezervace?unit=2&amp;service=1">Rezervovat →</a>
       </article>
       <article id="odbery">
         <img class="im" loading="lazy" src="img/cs-odbery.webp" alt="Odběry krve s online výsledky">
         <span class="sn">Diagnostika</span>
         <h3>Odběry krve</h3>
         <p>Zjisti, co tvému tělu opravdu chybí. Výsledky dostaneš online — a infuzi na míru.</p>
+        <a class="svc-go" href="https://rezervace.infuznik.cz/rezervace">Rezervovat →</a>
       </article>
       <article id="svetlo">
         <img class="im" loading="lazy" src="img/cs-redlight.jpg" alt="Terapie červeným světlem">
         <span class="sn">Světelná terapie</span>
         <h3>Červené světlo</h3>
         <p>Fotobiomodulace pro rychlejší regeneraci svalů a tlumení zánětů. Standard vrcholového sportu.</p>
+        <a class="svc-go" href="https://rezervace.infuznik.cz/rezervace?unit=3&amp;service=1">Rezervovat →</a>
       </article>
       <article id="vodik">
         <img class="im" loading="lazy" src="img/vt-hero-2.webp" alt="Vodíková inhalační terapie">
         <span class="sn">Inhalace</span>
         <h3>Vodíková terapie</h3>
         <p>Molekulární vodík proti oxidačnímu stresu. Sedni si, dýchej, zregeneruj.</p>
+        <a class="svc-go" href="https://rezervace.infuznik.cz/rezervace?unit=3&amp;service=1">Rezervovat →</a>
       </article>
     </div>
     <div class="prods rv">
