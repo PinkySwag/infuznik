@@ -159,6 +159,28 @@ header .btn{padding:.65rem 1.25rem}
 .soc a:hover{background:var(--yellow);border-color:var(--coal)}
 .soc svg{width:15px;height:15px;fill:currentColor}
 @media(max-width:1240px){nav a.nl{display:none}}
+.burger{
+  display:none;width:38px;height:38px;border:1px solid var(--line-y);border-radius:2px;
+  background:none;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+}
+.burger span{width:17px;height:2px;background:var(--coal);display:block;transition:transform .2s,opacity .2s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1240px){.burger{display:flex}}
+.mnav{
+  display:none;position:fixed;top:72px;left:0;right:0;z-index:49;
+  background:rgba(255,255,255,.98);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);flex-direction:column;
+  padding:.5rem clamp(20px,5vw,64px) 1rem;max-height:calc(100svh - 72px);overflow-y:auto;
+}
+.mnav.open{display:flex}
+.mnav a{
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+  text-decoration:none;color:var(--coal);padding:.9rem 0;border-bottom:1px solid var(--line);
+}
+.mnav a:last-child{border-bottom:none}
+@media(max-width:520px){header .soc{display:none}}
 
 /* ---------- sekce obecně ---------- */
 section{padding:clamp(4.5rem,9vw,8.5rem) clamp(20px,7vw,110px)}
@@ -611,8 +633,23 @@ footer a:hover{color:var(--coal)}
       </a>
     </span>
     <a class="btn btn-signal" href="https://rezervace.infuznik.cz/rezervace">Rezervovat</a>
+    <button class="burger" id="burger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mnav">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 </header>
+<div class="mnav" id="mnav">
+  <a href="#pribeh">Příběh</a>
+  <a href="#infuze">Infuze</a>
+  <a href="#pruvodce">Průvodce výběrem</a>
+  <a href="#vcelicky">Včeličky</a>
+  <a href="#odbery">Odběry krve</a>
+  <a href="#svetlo">Červené světlo</a>
+  <a href="#vodik">Vodíková terapie</a>
+  <a href="#vysetreni">Vstupní vyšetření</a>
+  <a href="#faq">FAQ</a>
+  <a href="#kontakt">Kontakt</a>
+</div>
 
 <!-- ============ HERO ============ -->
 <section class="hero light" id="top">
@@ -1102,6 +1139,19 @@ footer a:hover{color:var(--coal)}
   }
   addEventListener('scroll',upd,{passive:true});
   upd();
+})();
+
+// mobilní menu
+(function(){
+  var bg=document.getElementById('burger'),mn=document.getElementById('mnav');
+  bg.addEventListener('click',function(){
+    var open=mn.classList.toggle('open');
+    bg.classList.toggle('x',open);
+    bg.setAttribute('aria-expanded',open);
+  });
+  mn.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){mn.classList.remove('open');bg.classList.remove('x');bg.setAttribute('aria-expanded','false')});
+  });
 })();
 
 // průvodce výběrem
