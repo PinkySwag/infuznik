@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+# PRODUKCE (infuznik.cz): nahraď obsah tímto:
+# User-agent: *
+# Allow: /
+# Sitemap: https://www.infuznik.cz/sitemap.xml
