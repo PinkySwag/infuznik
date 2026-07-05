@@ -150,6 +150,14 @@ nav a.nl:hover{color:var(--coal)}
 .btn-ghost{border-color:var(--line-y);color:var(--coal)}
 .btn-ghost:hover{background:var(--coal);border-color:var(--coal);color:var(--white)}
 header .btn{padding:.65rem 1.25rem}
+.soc{display:flex;align-items:center;gap:.55rem}
+.soc a{
+  display:flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border:1px solid var(--line-y);border-radius:2px;
+  color:var(--coal);transition:background .18s,border-color .18s;
+}
+.soc a:hover{background:var(--yellow);border-color:var(--coal)}
+.soc svg{width:15px;height:15px;fill:currentColor}
 @media(max-width:1240px){nav a.nl{display:none}}
 
 /* ---------- sekce obecně ---------- */
@@ -364,8 +372,10 @@ section{padding:clamp(4.5rem,9vw,8.5rem) clamp(20px,7vw,110px)}
 /* ---------- další služby ---------- */
 .svc h2{font-size:clamp(2rem,4.5vw,3.4rem);margin:.8rem 0 3rem}
 .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.svc-grid article{background:var(--white);padding:1.4rem 1.4rem 2.1rem;transition:background .2s}
+.svc-grid article{background:var(--white);padding:1.4rem 1.4rem 2.1rem;transition:background .2s;position:relative}
 .svc-grid article:hover{background:rgba(255,214,10,.14)}
+.svc-grid article:hover .svc-go{color:var(--coal)}
+.svc-go::after{content:"";position:absolute;inset:0}
 .svc-grid .im{width:100%;aspect-ratio:16/11;object-fit:cover;border-radius:2px;margin-bottom:1.2rem}
 .svc-grid .sn{
   font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;color:var(--gold);
@@ -592,6 +602,14 @@ footer a:hover{color:var(--coal)}
     <a class="nl" href="#vysetreni">Vstupní vyšetření</a>
     <a class="nl" href="#faq">FAQ</a>
     <a class="nl" href="#kontakt">Kontakt</a>
+    <span class="soc">
+      <a href="https://www.instagram.com/infuznik/" rel="noopener" aria-label="Instagram Infuzník">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.07 1.2.05 1.8.24 2.2.4.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.22.06 1.26.07 1.64.07 4.83s-.01 3.57-.07 4.83c-.05 1.17-.25 1.8-.41 2.22a3.7 3.7 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.05.35-2.22.4-1.26.06-1.64.07-4.83.07s-3.57-.01-4.83-.07c-1.17-.05-1.8-.24-2.22-.4a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.05-.41-2.22C2.2 15.57 2.2 15.19 2.2 12s.01-3.57.07-4.83c.05-1.17.25-1.8.41-2.22.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.35 2.22-.4C8.43 2.2 8.81 2.2 12 2.2m0-2.2C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13a5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0m0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84m0 10.15A4 4 0 1 1 16 12a4 4 0 0 1-4 3.99m7.85-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44"/></svg>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61582075331350" rel="noopener" aria-label="Facebook Infuzník">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.88 11.85v-8.38H7.08V12h3.04V9.36c0-3.01 1.8-4.67 4.54-4.67 1.31 0 2.68.23 2.68.23v2.95H15.83c-1.49 0-1.95.92-1.95 1.87V12h3.32l-.53 3.47h-2.79v8.38A12 12 0 0 0 24 12"/></svg>
+      </a>
+    </span>
     <a class="btn btn-signal" href="https://rezervace.infuznik.cz/rezervace">Rezervovat</a>
   </nav>
 </header>
@@ -1035,7 +1053,7 @@ footer a:hover{color:var(--coal)}
         <div class="row"><span>Adresa</span><div>Fügnerova 818/8, Ostrava-Přívoz · <a href="https://maps.google.com/?q=F%C3%BCgnerova+818/8,+Ostrava" rel="noopener" style="text-decoration:underline">mapa</a></div></div>
         <div class="row"><span>Telefon</span><div><a href="tel:+420736731419">+420 736 731 419</a></div></div>
         <div class="row"><span>E-mail</span><div><a href="mailto:info@infuznik.cz">info@infuznik.cz</a></div></div>
-        <div class="row"><span>Instagram</span><div><a href="https://www.instagram.com/matej_kuznik" rel="noopener">@matej_kuznik</a></div></div>
+        <div class="row"><span>Sociální sítě</span><div><a href="https://www.instagram.com/infuznik/" rel="noopener">@infuznik</a> · <a href="https://www.instagram.com/matej_kuznik" rel="noopener">@matej_kuznik</a> · <a href="https://www.facebook.com/profile.php?id=61582075331350" rel="noopener">Facebook</a></div></div>
       </address>
     </div>
     <div class="hours rv">
